@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional - Multimedia y Producción Audiovisual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-placeholder"> <img src="img/logo.jpg" alt="Logo portafolio" width="80px" height="60px"></div >
+            <nav class="nav-menu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hola,Alisson</h1>
+                    <h2 class="hero-subtitle">Estudiante de Multimedia y Producción Audiovisual.
+                        <p>Soy una persona responsable creativa y comprometido con cada actividad que realizo especialmente en el área de manejo de cámaras.
+Me caracterizo por trabajar en equipo frente en el ámbito creativo, buscando fortalecer mis habilidades y crecer tanto a nivel personal y profesional. </p>
+                    </h2>
+                    <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="img/FotoPerfil.jpeg" alt="Foto de perfil " class="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects-section">
+            <div class="section-container">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="img/Diseño_Personaje..jpg" alt="Miniatura del Diseño del Personaje "class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-card-title"> Diseño del Personaje</h3>
+                            <p>Un personaje valiente y decidido, siempre dispuesto a ayudar a quienes lo necesitan.
+Tiene cabello oscuro, ojos brillantes y una sonrisa que inspira confianza.
+Es inteligente y aprende rápidamente de cada experiencia que vive.
+Aunque enfrenta dificultades, nunca se rinde y busca soluciones con creatividad.
+Su mayor cualidad es la honestidad, que le gana el respeto de todos a su alrededor.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="img/Proyecto01.jpg" alt="Miniatura del Afiche Publicitario"class="project-image">
+                        <div class="project-info">
+                             <h3 class="project-card-title"> Afiche Publicitario </h3>
+                            <p>Un afiche deportivo es un cartel diseñado para promocionar un evento, equipo o actividad relacionada con el deporte.
+Suele incluir imágenes llamativas de atletas en acción, colores vivos y elementos gráficos dinámicos.
+Contiene información importante como la fecha, hora y lugar del evento.
+También destaca el nombre de los equipos o deportistas participantes y posibles patrocinadores.
+Su objetivo es atraer la atención del público y motivar la asistencia o participación en la actividad deportiva.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="img/Proyecto02.png" alt="Miniatura de la fotografía" class="project-image">
+                        <div class="project-info">
+                             <h3 class="project-card-title"> Fotografía</h3>
+                            <p>Una pareja se encuentra de pie frente a su casa, contemplando el horizonte en silencio. 
+                                El cielo se tiñe de tonos cálidos mientras el sol comienza a ocultarse en la distancia. Juntos observan el paisaje, 
+                                disfrutando de la tranquilidad del momento y la belleza de la naturaleza. Una suave brisa mueve sus cabellos,
+                                 creando una atmósfera serena y acogedora. En ese instante, comparten una sensación de paz, esperanza y compañía.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="skills-section">
+            <div class="section-container">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">Edición de Video</div>
+                    <div class="skill-card">Animación 2D</div>
+                    <div class="skill-card">Dibujo </div>
+                    <div class="skill-card">Fotografía Digital</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-text-block">
+                    <h2 class="contact-heading">¿Tienes un proyecto en mente?</h2>
+                    <p class="contact-description"> Esta sección invita al lector a transformar sus ideas en realidad. 
+                        Presenta la importancia de la planificación, la creatividad y el compromiso para desarrollar proyectos exitosos,
+                         destacando cómo cada iniciativa puede convertirse en una oportunidad de crecimiento e innovación..</p>
+                </div>
+                <div class="contact-form-block">
+                    <form action="https://formspree.io/f/xjgznldq" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" id="name" name="name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo</label>
+                            <input type="email" id="email" name="email" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+                        </div></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p class="copyright-text">&copy; 2026 . Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://web.whatsapp.com/" target="_blank" class="social-link"> WhatsApp</a>
+                <a href="jherry.quizhpi@upec.edu.ec" target="_blank" class="social-link"> Correo Electronico </a>
+                <a href="https://www.instagram.com/jherryferlopez?igsh=MW45eXg0eHV0bWlmZw%3D%3D&utm_source=qr" target="_blank" class="social-link"> Instagram</a>
+                <a href="https://github.com/Jherry11" target="_blank" class="social-link"> GitBub</a>
+                <a href="https://www.facebook.com/share/1KWagvLb2Y/?mibextid=wwXIfr" target="_blank" class="social-link"> Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+       
