@@ -1,0 +1,316 @@
+/* Reinicia márgenes y rellenos para mantener consistencia visual */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración general del documento */
+body {
+    font-family: 'Indie Flower', sans-serif;
+    line-height: 1.7;
+    color: #710505;
+}
+
+/* Contenedor central para controlar el ancho del contenido */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Encabezado fijo con navegación principal */
+header {
+    background-color: #710505;
+    padding: 20px 0;
+}
+
+/* Distribuye logo y menú horizontalmente */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ajusta la imagen del logo */
+.logo img {
+    display: block;
+    border-radius: 8px;
+}
+
+/* Lista de navegación horizontal */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* Estilo visual de los enlaces del menú */
+.nav-links a {
+    text-decoration: none;
+    color: #fffbf2;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Efecto visual al pasar el cursor */
+.nav-links a:hover {
+    color: #c10808;
+}
+
+/* Espaciado vertical amplio para separar secciones */
+section {
+    padding: 100px 0;
+}
+
+/* Fondo claro para destacar la presentación principal */
+.hero {
+    background-color: #fffbf2;
+}
+
+/* Organización en dos columnas para contenido principal */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Ocupa el espacio disponible para el texto */
+.hero-text {
+    flex: 1;
+}
+
+/* Título principal destacado */
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #710505;
+}
+
+/* Subtítulo descriptivo */
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #803d3d;
+}
+
+/* Botón principal de llamada a la acción */
+.btn {
+    display: inline-block;
+    background-color: #5a1818;
+    color: #fffbf2;
+    padding: 14px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Cambio visual al interactuar con botones */
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* Contenedor de la imagen de perfil */
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+/* Imagen circular para reforzar la identidad personal */
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sección informativa personal */
+.about {
+    background-color: #fce0e0;
+    text-align: center;
+}
+
+/* Títulos generales de sección */
+.about h2,
+.projects h2,
+.skills h2,
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #710505;
+}
+
+/* Fondo alterno para generar contraste visual */
+.projects {
+    background-color: #d99898;
+}
+
+/* Distribución horizontal de proyectos */
+.projects-grid {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* Tarjeta individual de proyecto */
+.project-card {
+    background-color: #fffbf2;
+    border-radius: 16px;
+    overflow: hidden;
+    flex: 1;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+/* Animación suave al interactuar */
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Ajusta imágenes de proyectos */
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+/* Área de contenido textual */
+.card-content {
+    padding: 20px;
+}
+
+/* Fondo claro para diferenciar habilidades */
+.skills {
+    background-color: #fffbf2;
+}
+
+/* Distribución uniforme de habilidades */
+.skills-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Tarjeta simple para cada habilidad */
+.skill-card {
+    flex: 1;
+    background-color: #fce0e0;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Efecto visual sobre tarjetas */
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Fondo alternado para mantener jerarquía visual */
+.contact {
+    background-color: #fce0e0;
+}
+
+/* Distribuye texto y formulario en dos columnas */
+.contact-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Columna de texto motivacional */
+.contact-text {
+    flex: 1;
+}
+
+/* Destaca la llamada a la acción */
+.contact-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Columna del formulario */
+.contact-form {
+    flex: 1;
+}
+
+/* Organización vertical de los campos */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Apariencia uniforme para entradas de texto */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d99898;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+/* Pie de página oscuro para cerrar la composición visual */
+footer {
+    background-color: #710505;
+    color: #fffbf2;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Espaciado entre texto e iconos */
+footer p {
+    margin-bottom: 20px;
+}
+
+/* Organización horizontal de redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Estilo de enlaces sociales */
+.social-links a {
+    color: #fffbf2;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Resalta enlaces al interactuar */
+.social-links a:hover {
+    color: #c10808;
+}
+
+/* Adaptación para dispositivos pequeños */
+@media (max-width: 768px) {
+
+    .hero-content,
+    .contact-content,
+    .projects-grid,
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .contact-text h2 {
+        font-size: 2.2rem;
+    }
+}
